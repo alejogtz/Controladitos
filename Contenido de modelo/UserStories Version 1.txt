@@ -1,0 +1,69 @@
+Name:	Sesiones
+	Como [directivo] quiero que existan 2 sesiones para entrar al sistema,	
+	la primera con las capacidades de operaraciones CRUD y reportes del sistema
+	y la segunda para el control de entrada
+Pruebas de aceptacion:
+--------------------------------------
+Name:	DescripcionSesion
+	Como coordinadora quiero que la descripcion de la sesion este siempre visible para
+	estar comoda con la visualizacion
+Pruebas de aceptacion:
+	Al entrar a la sesion debe mostrarse un label que indique que la sesion 
+	corresponde a Coordinacion
+-------------------------------------	
+Name:	ColorSesionCoordinacion
+	Como coordinadora quiero que mi sesion este de color amarillo
+	porque corresponde con los colores administrativos de la institucion
+Pruebas de aceptacion:
+	Al entrar a la sesion y navega siempre debe ser consistente el color
+	Amarillo
+--------------------------------------
+name: RegistrarAlumno
+	Como coordinadora necesito ver una lista de todos los alumnos y poder modificar sus datos,
+	eliminar algún alumno o 
+	de registro [formulario1.docx] para registrar un alumno
+---------------------------------------
+name: registro asistencia alumno
+	Como encargado de la puerta quiero ser capaz de usar el scanner para escanear 
+	la credencial del alumno y que automaticamente se registre su asistencia en el sistema	
+pruebas de aceptacion:
+	al scannear la credencial no debe pasar mas de dos segundos para que el sistema muestre
+	un mensaje que advierta que la asistencia se registró exitosamente.
+------------------------------------------------
+name: registro asistencia alumno que llega tarde
+	como encargadode la puerta necesito poder registrar la asistencia de un alumno
+	de manera manual ingresando unicamente su nombre o numero de control, el sistema debe 
+	hacer una  busqueda rapida por cada caracter que ingrese
+prueba de aceptacion:
+	Al escribir una letra debe listarme una lista de alumnos que las primeras letras de su nombre
+	corresponda con la letra ingresada
+	Al escribir un numero debe listarme una lista de alumnos que su numero de credencial 
+	corresponda con los digitos ingresados al sistema
+-------------------------------------------------------
+name: cambio de contraseña
+	Como coordinadora necesito cambiar la contraseña de la sesion de coordinacion
+	por motivos de seguridad y tambien la de encargado de la puerta.
+	La sesion de encargado de la puerta no debe permitir cambio de contraseña desde esa sesion
+prueba de aceptacion:
+	El sistema debe pedir la vieja contraseña dos veces para confirmar sin opcion de copiar y pegar
+	Al cambiar la contraseña la sesion se cierra y debe volverse a ingresar
+--------------------------------------------------------------
+name: Correo de respaldo
+	Como coordinadora necesito que el sistema guarde un correo para ocasiones de restauracion
+	de contraseña o futuras funciones
+----------------------------------------------------------------
+name: resetear contraseña
+	como coordinadora necesito recuperar mi contraseña en caso de olvido, requiero recibir
+	un correo con la nueva contraseña
+prueba de aceptacion:
+	Al entrar a la sesion con la nueva contraseña debe mostrarse un mensaje de advertencia
+	para cambiar la contraseña temporal por una mas segura	
+========================================================================================
+Requerimientos No funcionales:
+	De intefaz de usuario:
+		Debe ser siempre visible el icono para logout
+		
+	De implementacion:
+		
+		
+		
