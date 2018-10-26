@@ -61,9 +61,52 @@ prueba de aceptacion:
 ========================================================================================
 Requerimientos No funcionales:
 	De intefaz de usuario:
-		Debe ser siempre visible el icono para logout
+		Debe ser siempre visible el icono para logout y un label que indique la sesion activa
+		Los colores utilizados para el sistema deben ser [azul, amarillo y morado :-)]
+		
 		
 	De implementacion:
+		El sistema debe ser implementado en un ambiente web
+		Los lenguajes de programacion para el back-end deben ser [Perl o Lisp] NO PHP (es para gatos :-))
+		No usar frameworks para el front-end :v [Blas alert spoiler]
+		La Base de datos debe ser MySQL
+
+	De seguridad
+		Las contraseñas deben estar cifradas en md5 con 120 iteraciones :v
+		
+	De Documentacion
+		Debe ser entregado un manual de usuario ???(será prudente???)
+		Debe ser entregado la documentacion completa del modelo de sistema, los modelos de analisis 
+			y de diseño de interfaces
+		Formato de documentacion: PDF o DOCX si es indispensable
+	
+	De hardware
+		El sistema debe ser implementado para funcionar en una maquina [especificaciones de alguna pc] 
+		Servidor apache y navegador web Firefox community edition
+	
+	De desempeño:
+		Ninguna de sus funciones debe tardar mas de 5 segundos en ejecutarse
+	Manejo de errores y condiciones extremas:
+	...
+	
+	Cuestiones de calidad:
+	...
+	
+	Modificaciones al sistema:
+	...
+
+	Ambiente fIsico:
+	...
+	
+	Cuestiones de seguridad:
+	...
+
+	Cuestiones de recursos:
+	....
+		
+	
+		
+		
 		
 		
 		
