@@ -1,24 +1,27 @@
-Name:	Sesiones
+{Name:	Sesiones
 	Como [directivo] quiero que existan 2 sesiones para entrar al sistema,	
 	la primera con las capacidades de operaraciones CRUD y reportes del sistema
 	y la segunda para el control de entrada
 Pruebas de aceptacion:
+}
 --------------------------------------
-Name:	DescripcionSesion
+{Name:	DescripcionSesion
 	Como coordinadora quiero que la descripcion de la sesion este siempre visible para
 	estar comoda con la visualizacion
 Pruebas de aceptacion:
 	Al entrar a la sesion debe mostrarse un label que indique que la sesion 
 	corresponde a Coordinacion
+}
 -------------------------------------	
-Name:	ColorSesionCoordinacion
+{???Name:	ColorSesion
 	Como coordinadora quiero que mi sesion este de color amarillo
 	porque corresponde con los colores administrativos de la institucion
 Pruebas de aceptacion:
 	Al entrar a la sesion y navega siempre debe ser consistente el color
 	Amarillo
+}
 --------------------------------------
-name: SS OperacionCRUD Alumno
+{name: SS OperacionCRUD Alumno
 	Como coordinadora necesito ver a los alumnos registrados
 	Tener la opción de agregar un nuevo alumno y que para esto me pida los siguiente campos:
 		*Un numero de control unico
@@ -31,23 +34,26 @@ pruebas de aceptacion:
 	El sistema debe identificar si el alumno ya existe
 	
 	*Datos obligatorios
+}
 -------------------------------------------------------------- 
-Name: Busqueda rapida de alumnos
+{Name: Busqueda rapida de alumnos
 	Como coordinadora necesito buscar de manera agil a los alumnos para mayor eficiencia
 	Que al escribir una letra el patro ingresado corresponda con el nombre del alumno
 	Y si se ingresa un digito el patron se corresponda con el numero de control
 Pruebas de aceptacion:
 	Al realizar la busqueda no debe mostrarse más de 10 resultados, lo demás deben mostrarse a traves
 	de un scroll.
+}
 ---------------------------------------
-name: registro asistencia Horario Normal
+{name: registro asistencia Horario Normal
 	Como encargado de la puerta quiero ser capaz de usar el scanner para escanear 
 	la credencial del alumno y que automaticamente se registre su asistencia en el sistema	
 pruebas de aceptacion:
 	al scannear la credencial no debe pasar mas de dos segundos para que el sistema muestre
 	un mensaje que advierta que la asistencia se registró exitosamente.
+}
 ------------------------------------------------
-name: registro asistencia manual
+{name: registro asistencia manual
 	como encargadode de la puerta necesito poder registrar la asistencia de un alumno [que llega tarde cuando el scannear no funcione correctamente] de manera manual a partir de su nombre+apellidos o numero de control
 prueba de aceptacion:
 	Debe estar presente la funcion de Busqueda Rapida de alumnos [vease historia NoXXXXX]
@@ -55,80 +61,103 @@ prueba de aceptacion:
 	corresponda con la letra ingresada
 	Al escribir un numero debe listarme una lista de alumnos que su numero de credencial 
 	corresponda con los digitos ingresados al sistema
+}
 ---------------------------------------------------------------
-Name: Registrar Asistencia Horario Especial
+{Name: Registrar Asistencia Horario Especial
 	Como encargado de la puerta necesito habilitar el sistema para que permita registrar la asistencia
 	fuera del horario de entrada, para registrar rapidamente a los alumnos que tengan un horario especial
+}
 -------------------------------------------------------
-name: cambio de contraseña
+{name: cambio de contraseña
 	Como coordinadora necesito cambiar la contraseña de la sesion de coordinacion
 	por motivos de seguridad y tambien la de encargado de la puerta.
 	La sesion de encargado de la puerta no debe permitir cambio de contraseña desde esa sesion
 prueba de aceptacion:
 	El sistema debe pedir la vieja contraseña dos veces para confirmar sin opcion de copiar y pegar
 	Al cambiar la contraseña la sesion se cierra y debe volverse a ingresar
+}
 --------------------------------------------------------------
-name: Correo de respaldo
+{name: Correo de respaldo
 	Como coordinadora necesito que el sistema guarde un correo para ocasiones de restauracion
 	de contraseña o futuras funciones
+}
 ----------------------------------------------------------------
-name: resetear contraseña
+{name: resetear contraseña
 	como coordinadora necesito recuperar mi contraseña en caso de olvido, requiero recibir
 	un correo con la nueva contraseña
 prueba de aceptacion:
 	Al entrar a la sesion con la nueva contraseña debe mostrarse un mensaje de advertencia
 	para cambiar la contraseña temporal por una mas segura	
+}
 --------------------------------------------------------------------
-name: Menu Sesion Coordinadora
- Como coordinadora necesito 
+{name: Menu Sesion Coordinadora
+ Como coordinadora necesito que despues de iniciar sesion, poder visualizar las opciones para la gestion de alumnos,
+ la funcion para importar alumnos y exportar alumnos.
  
+}
 -----------------------------------------------------------------------
-Name: Menu Sesion Puerta?
+{Name: Menu Sesion Puerta?
 	Como el encargado de la puerta necesito, despues de iniciar la sesion, poder visualizar
 	Las funciones para iniciar el Scanner y poder comenzar a registrar las asistencias,
 	La funcion de registro de asistencias de alumnos con horario especial
 	Y la funcion para el registro manual de asistencia
 
+}
 ------------------------------------------------------------------------
-Name: Sesion ROOT
-	Como Director necesito que exista una sesion superusuario para funciones de exportar masiva de datos y respaldos y limpieza de datos[eliminar alumnos del sistema por cambio de periodo escolar]
-	
---------------------------------------------------------------------------
-Name: Vaciado del sistema y respaldos
+{Name: Vaciado del sistema y respaldos
 
 ....
 ....
 ....
+}
 ------------------------------------------------------------------------
-Name: Exportar Datos
-	Como directos necesito ser capaz de exportar los datos de los alumnos y sus respectivas asistencias a formato CSV.
+{Name: Exportar Datos ? [dos casos: solo alumnos o alumnos y asistencias]...
+	Como director necesito ser capaz de exportar la informacion de los alumnos de los alumnos y sus respectivas asistencias a formato CSV.
 Pruebas de aceptacion
+}
 ------------------------------------------------------------------------
-Name: Generar Reporte de alumno
-	Como coordinadora necesito visualizar la lista de alumnos, poder seleccionar un alumno y tener una funcion para visualizar su reporte de asistencias de acuerdo al formato [reporte de asistencias.docx] y que este reporte lo pueda exportar a un documento PDF o DOCX de acuerdo al formato [formato Reporte.docx]
-pruebas de aceptacion
-	
-	
-------------------------------------------------------------------------
-Name: Importar Datos
-	como coordinadora necesito una interfaz que me permita importar los datos de alumnos desde un archivo csv. Esto es necesario cuando hay cambio de periodos escolares, es necesario vaciar el sistema y registrar a todos los alumnos del nuevo periodo.
-	
+{Name: Importar Alumnos
+	como coordinadora necesito una interfaz que me permita importar los datos de alumnos desde un archivo csv. Esto es necesario cuando hay cambio de periodos escolares, es necesario vaciar el sistema y registrar a todos los alumnos del nuevo periodo.	
 Pruebas de aceptacion:
 	La funcion de importar debe respetar las reglas de registro. O sea, los campos obligatorios.
 	La funcion de importar debe identificar alumnos que ya han sido registrados
 	La funcion de importar no debe abortarse por los registros imcompletos o registros que no cumplan con el dominio de valores.
 	.... etc :'v
-------------------------------------------------------------------------
-Name: Inicio de Sesión.
+}
+----------------------------------------------------------------------------
+{Name: Generar Reporte de alumno
+	Como coordinadora necesito visualizar la lista de alumnos, poder seleccionar un alumno y tener una funcion para visualizar su reporte de asistencias de acuerdo al formato [reporte de asistencias.docx] y que este reporte lo pueda exportar a un documento PDF o DOCX de acuerdo al formato [formato Reporte.docx]
+pruebas de aceptacion:
+	
+	
+}
+---------------------------------------------------------------------------
+{Name: Inicio de Sesión.
 	Necesito una interfaz que permita seleccionar entre Puerta o Coordinacion para el tipo de sesion y un campo para ingresar la contraseña
 Prubas de aceptacion:
 	el campo de contraseña debe tener un boton que permita visualizar la contraseña mientras el boton este presionado.
 	.... etc :'v
 
 
+}
+------------------------------------------------------------------------------
+{Name: Eliminar todos los alumnos
+	Como coordinadora necesito tener la opción de eliminar a todos los alumnos de la base de datos, esto es necesario cuando termina un periodo escolar.
+Pruebas de aceptacion:
+	Debe pedir confirmacion por contraseña para autorizar la eliminacion.	
+}
+------------------------------------------------------------------------------------------
+{Name:
+	
+Prubas de aceptacion:
+		
+}
 
+*Respaldo de la base de datos
+*Vaciar la Base de datos de alumnos por nuevo periodo
 ========================================================================================
-Requerimientos No funcionales:
+
+{Requerimientos No funcionales:
 	De intefaz de usuario:
 		Debe ser siempre visible el icono para logout y un label que indique la sesion activa
 		Los colores utilizados para el sistema deben ser Blanco y Azul [colores de la institución]
@@ -175,7 +204,8 @@ Requerimientos No funcionales:
 		
 	
 		
-		
+
+}		
 		
 		
 		
